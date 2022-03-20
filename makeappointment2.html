@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HealthConnect Book An Appointment</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!--- header and progress bar -->
+<div class="appointmentformpageheader">
+    <h1>Book An Appointment</h1>
+    <img class="progressbar" src="progress-bar-2.png" alt="Progress Bar">
+</div>
+
+<!--- navigation bar -->
+<div class="navigationbar">
+    <a href="index.html">
+        <img class="logo" src="HealthConnect-Logo.png" alt="HealthConnect Logo" >
+    </a>
+    <div class="navtabs">
+        <ul>
+            <a class="currentpage" href="appointments.html">Appointments</a>
+            <a href="results.html">Results</a>
+            <a>FAQs</a>
+            <a>Account</a>
+            <img class="accounticon" alt="account icon" src="account-icon.png" >
+        </ul>
+    </div>
+</div>
+
+<!--- appointment form page two -->
+<div class="appointmentforminformation2">
+    <label class="appointmentformheader2" for="dosedate">Select dose date:<label>
+        <select name="bookappointmentdate" id="dosedate">
+             <option value="January30">Today: January 30, 2022 </option>
+             <option value="January31">January 31, 2022</option>
+        </select>
+    <p class="appointmentformheader">Select test center and time.</p>
+    <div class="vaccinelocation">
+        <p>TCS Hall</p>
+        <p> 4665 Forbes Ave, Pittsburgh, PA 15213</p>
+        <p>Date: January 30, 2022</p>
+        <p>Vaccine: COVID-19 (Moderna)</p>
+        <input type="radio" id="10" name="apttime" value="10:00 AM">
+        <label for="10">10:00 AM</label>
+        <input type="radio" id="11" name="apttime" value="11:00 AM">
+        <label for="11">11:00 AM</label>
+        <input type="radio" id="12:15" name="apttime" value="12:15 PM">
+        <label for="12:15">12:15 PM</label><br>
+        <input type="radio" id="12:45" name="apttime" value="12:45 PM">
+        <label for="12:45">12:45 PM</label>
+        <input type="radio" id="3:45" name="apttime" value="3:45 PM">
+        <label for="3:45">3:45 PM</label>
+        <input type="radio" id="6" name="apttime" value="6:00 PM">
+        <label for="6">6:00 PM</label>
+    </div>
+    <div class="vaccinelocation2">
+        <p>Baker Hall</p>
+        <p>4909 Frew Street, Pittsburgh, PA 15213</p>
+        <p>Date: January 30, 2022</p>
+        <p>Vaccine: COVID-19 (Moderna)</p>
+        <input type="radio" id="11:15" name="apttime" value="11:15 AM">
+        <label for="11:15">11:15 AM</label>
+        <input type="radio" id="12" name="apttime" value="12:00 PM">
+        <label for="12">12:00 PM</label>
+        <input type="radio" id="1:30" name="apttime" value="1:30 PM">
+        <label for="12:15">1:30 PM</label><br>
+        <input type="radio" id="2" name="apttime" value="2:00 PM">
+        <label for="2">2:00 PM</label>
+        <input type="radio" id="4:30" name="apttime" value="4:30 PM">
+        <label for="4:30">4:30 PM</label>
+    </div>
+    <a href="makeappointment1.html">
+    <button class="formbutton2" type="button">Back</button>
+    </a>
+    <a href="appointmentdetail1.html">
+    <button class="formbutton3" type="button">Book appointment</button>
+    </a>
+</div>
+
+</body>
+</html>
