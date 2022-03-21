@@ -31,8 +31,8 @@
     </div>
 </div>
 
-<form>
-<!--- appointment form page one -->
+<form name="vaccineForm">
+<!--- appointment form -->
 <div class="appointmentforminformation">
     <p class="appointmentformheader">Testing Location: TCS Hall (4665 Forbes Ave, Pittsburgh, PA 15213)</p>
     <p class="appointmentformheader">Select a vaccine brand.</p>
@@ -43,8 +43,8 @@
     <input onclick="addVaccineBrand()" type="radio" id="johnson" name="vaccinebrand" value="Vaccine Brand: Johnson & Johnson">
     <label for="johnson">Johnson & Johnson</label><br><br>
     <label class="appointmentformheader" for="dosedate">Select dose date:<label>
-        <select name="bookappointmentdate" id="dosedate">
-             <option value="January30">Today: January 30, 2022 </option>
+        <select name="bookappointmentdate" id="dosedate" onclick="selectVaccineBrand()">
+             <option value="January30">January 30, 2022 </option>
              <option value="January31">January 31, 2022</option>
              <option value="February1">Febuary 1, 2022 </option>
              <option value="February2">February 2, 2022</option>
@@ -62,12 +62,13 @@
              <option value="1:00PM">1:00PM </option>
              <option value="2:30PM">2:30PM</option>
         </select>
-    <p class="appointmentformheader">Confirm that you have selected:</p>
+    <p class="appointmentformheaderconfirmation">Confirm that you have selected:</p>
     <p id="vaccinebrandresults">Please select a vaccine brand.</p>
     <a href="appointmentdetail1.html">
-    <button class="formbutton" type="button">Book Appointment</button>
+    <button onclick="confirmAppointment()" class="formbutton" type="button">Book Appointment</button>
     </a>
 </div>
+</form>
 
 </body>
 </html>

@@ -99,7 +99,7 @@ table {
     border-radius:  8px;
     padding:  10px 30px;
     color:  white;
-    position:  fixed; left:  1000px; top: 520px;
+    position:  fixed; left:  200px; top: 520px;
 }
 
 .formbutton2 {
@@ -123,11 +123,15 @@ table {
     height:  22px;
 }
 
-.appointmentheader {
+.header {
     text-align:  center;
     position:  relative; top:  90px;
 }
 
+.appointmentheader {
+    text-align:  center;
+    position:  relative; top:  100px;
+}
 .searchbar {
     font-family: 'Open Sans', sans-serif;
     position:  relative; top:  130px; left:  20px;
@@ -171,6 +175,11 @@ table {
 
 .locationheading, .dateheading,.appointmentformheader {
     font-weight:  bold;
+}
+
+.appointmentformheaderconfirmation {
+    font-weight:  bold;
+    color: rgb(39, 52, 105);
 }
 
 .appointmentformheader2 {
@@ -272,8 +281,4 @@ table {
     box-shadow:  5px 5px 20px 5px rgb(244,244,244);
 }
 
-.formdetails {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: regular;
-}
 
