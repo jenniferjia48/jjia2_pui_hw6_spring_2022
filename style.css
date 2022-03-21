@@ -23,6 +23,7 @@ a {
 
 p {
     font-family: 'Open Sans', sans-serif;
+    font-weight: regular;
 }
 
 th {
@@ -98,7 +99,7 @@ table {
     border-radius:  8px;
     padding:  10px 30px;
     color:  white;
-    position:  relative; left:  640px; top: 20px;
+    position:  fixed; left:  1000px; top: 520px;
 }
 
 .formbutton2 {
@@ -269,5 +270,10 @@ table {
     height:  380px;
     border-radius:  25px;
     box-shadow:  5px 5px 20px 5px rgb(244,244,244);
+}
+
+.formdetails {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: regular;
 }
 
