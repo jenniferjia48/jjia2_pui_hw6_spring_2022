@@ -31,16 +31,16 @@
     </div>
 </div>
 
-<form name="vaccineForm">
+<form name="vaccineForm" action="appointmentdetail1.html" method="post">
 <!--- appointment form -->
 <div class="appointmentforminformation">
     <p class="appointmentformheader">Testing Location: TCS Hall (4665 Forbes Ave, Pittsburgh, PA 15213)</p>
     <p class="appointmentformheader">Select a vaccine brand.</p>
-    <input onclick="addVaccineBrand()" type="radio" id="pfizer" name="vaccinebrand" value="Vaccine Brand: Pfizer">
+    <input onclick="addVaccineBrand()" type="radio" id="pfizer" name="vaccinebrand" value="Pfizer">
     <label for="pfizer">Pfizer</label><br>
-    <input onclick="addVaccineBrand()" type="radio" id="moderna" name="vaccinebrand" value="Vaccine Brand: Moderna">
+    <input onclick="addVaccineBrand()" type="radio" id="moderna" name="vaccinebrand" value="Moderna">
     <label for="moderna">Moderna</label><br>
-    <input onclick="addVaccineBrand()" type="radio" id="johnson" name="vaccinebrand" value="Vaccine Brand: Johnson & Johnson">
+    <input onclick="addVaccineBrand()" type="radio" id="johnson" name="vaccinebrand" value="Johnson & Johnson">
     <label for="johnson">Johnson & Johnson</label><br><br>
     <label class="appointmentformheader" for="dosedate">Select dose date:<label>
         <select name="bookappointmentdate" id="dosedate" onclick="selectVaccineBrand()">
@@ -62,11 +62,9 @@
              <option value="1:00PM">1:00PM </option>
              <option value="2:30PM">2:30PM</option>
         </select>
-    <p class="appointmentformheaderconfirmation">Confirm that you have selected:</p>
-    <p id="vaccinebrandresults">Please select a vaccine brand.</p>
-    <a href="appointmentdetail1.html">
-    <button onclick="confirmAppointment()" class="formbutton" type="button">Book Appointment</button>
-    </a>
+    <p class="appointmentformheaderconfirmation">Please confirm that you have selected the following vaccine brand:</p>
+    <p id="vaccinebrandresults"></p>
+    <input type="submit" value="Book Appointment" onclick="confirmAppointment()" class="formbutton">
 </div>
 </form>
 

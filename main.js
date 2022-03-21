@@ -1,3 +1,4 @@
+//function to display vaccine brand when booking an appointment
 function addVaccineBrand() {
   if (document.getElementById('pfizer').checked) {
     vaccine_brand = document.getElementById('pfizer').value;
@@ -12,6 +13,7 @@ function addVaccineBrand() {
   document.getElementById('vaccinebrandresults').innerHTML = vaccine_brand;
 }
 
+//error function when choosing date before vaccine brand
 function selectVaccineBrand() {
   var brand = document.forms["vaccineForm"]["vaccinebrand"].value;
   if (brand == "") {
@@ -20,6 +22,7 @@ function selectVaccineBrand() {
   }
 }
 
+//confirm appointment feedback
 function confirmAppointment() {
     alert('Thanks for booking an appointment. You will receive confirmation shortly.');
     console.log('booking an appointment')
