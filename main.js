@@ -25,4 +25,3 @@ function confirmAppointment() {
     console.log('booking an appointment')
     console.log(vaccine_brand);
 }
-
